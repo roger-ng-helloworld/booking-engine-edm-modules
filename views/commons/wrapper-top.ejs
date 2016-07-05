@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Helloworld Responsive EDM</title>
+      
+      <style type="text/css">
+         /* Client-specific Styles */
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         .ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+         .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  */
+         #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+         img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+         a img {border:none;}
+         .image_fix {display:block;}
+         p {margin: 0px 0px !important;}
+         table td {border-collapse: collapse;}
+         table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+         a {color: #00BBE3;text-decoration: none;text-decoration:none!important;}
+         /*STYLES*/
+         table[class=full] { width: 100%; clear: both; }
+
+
+         .destination-name{
+            padding-left: 0;
+         }
+
+         .destination-price{
+            padding-right: 0;
+         }
+
+         .hero-title{
+            font-size:80px; 
+            position:relative; 
+            z-index:10; 
+            border-bottom:1px 
+            dotted #ffffff; 
+            text-align:center; 
+            color:#ffffff; 
+            font-family:arial; 
+            padding-top:25px; 
+            text-transform:uppercase; 
+            width:90%;
+         }
+
+         .hero-booknow table{
+            width: 220px;
+            height: 40px;
+         }
+         .hero-spacer{
+            height: 15px;
+         }
+         .hero-booknow table a{
+            font-size: 20px;
+         }
+
+         .col-2-horizontal-right{
+            text-align: right !important;
+         }
+         .col-2-horizontal .img-area{
+            width: 85px;
+            float: left;
+         }
+         .col-2-horizontal .description-area{
+            width: 178px;
+            float: left;
+            margin-left: 15px;
+         }
+         .col-2-horizontal .icon-img-area{
+             width: 65px;
+         }
+         .col-2-horizontal .icon-description-area{
+            width: 210px;
+         }
+         .col-3-icon{
+             width:50px;
+         }
+         .col-4-page .col3banner{
+            height:75px;
+         }
+
+         /*IPAD STYLES*/
+         @media only screen and (max-width: 640px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #00BBE3; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #00BBE3 !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 440px!important;text-align:center!important;}
+         table[class=devicewidthinner] {
+            width: 420px!important;
+            text-align:center!important;
+            margin-left: 10px;
+            float: left; 
+         }
+         img[class=banner] {width: 440px!important;height:220px!important;}
+         img[class=colimg2] {width: 440px!important;height:220px!important;}
+         img[class=col3banner] {width: 100%!important;}
+         .mob-hide {
+            display: none !important;            
+         }
+         
+         .mob-generic-top-bottom-margin {
+            margin-top: 30px !important;
+            margin-bottom: 10px !important;
+         }
+
+         .destination-name{
+            padding-left: 0;
+         }
+         .destination-price{
+            padding-right: 0;
+         }
+
+         table[class=full-width-banner-image],
+         table[class=full-width-banner-image-inner] {
+           width: 200px!important;
+           text-align: center!important;
+           float: left;
+         }
+
+         .full-width-destination-wrapper,
+         .full-width-destination-container {
+            width: 215px!important;
+            text-align: center!important;
+            margin-right: 6px !important;
+            float: left;
+         }
+
+         .full-width-banner-image-inner img{
+            margin-top: 42px;
+            vertical-align: bottom;
+         }
+
+         .full-width-banner-image-inner{
+           margin-left: 20px !important;
+         }
+
+         .hero-title{
+            font-size:50px; 
+            position:relative; 
+            z-index:10; 
+            border-bottom:1px 
+            dotted #ffffff; 
+            text-align:center; 
+            color:#ffffff; 
+            font-family:arial; 
+            padding-top:25px; 
+            text-transform:uppercase; 
+            width:90%;
+         }
+         .hero-booknow table{
+            width: 220px;
+            height: 40px;
+         }
+         .hero-spacer{
+            height: 15px;
+         }
+         .hero-booknow table a{
+            font-size: 30px;
+         }
+
+         .col-2-horizontal{
+            width: 440px!important;
+         }
+         .col-2-horizontal-right{
+            text-align: left !important;
+         }
+         .col-2-horizontal .img-area{
+            width: 85px;
+            float: left;
+         }
+         .col-2-horizontal .description-area{
+            width: 330px;
+            float: left;
+            margin-left: 15px;
+         }
+             
+         .col-2-horizontal .icon-description-area{
+            width: 350px;
+            float:left;
+         }
+         .col-2-img-horizontal{
+            width:80px;
+         }
+             
+         .col-4-page .block-wrapper{
+            width:220px !important;
+         }
+         .col-4-page .block-wrapper .devicewidthinner{
+            width:190px !important;
+            margin:0 5px !important;
+         }
+
+         .col-4-page .col3banner{
+            height:110px;
+         }
+
+         .hero-txt {
+            font-size: 60px !important;
+            line-height: 60px !important;
+         }
+
+         .dotted-line {
+            width: 420px !important;
+         }
+
+         .four-col-item {
+            width: 210px !important;            
+         }
+
+         .four-col-item-1 {
+                      
+         }
+
+         .four-col-item-2 {
+            float: right !important;      
+         }
+
+         .four-col-item-3 {
+            float: left !important;      
+         }
+
+         .four-col-item-4 {
+                  
+         }
+         
+         .four-col-item .four-col-item-img {
+            width: 210px !important;
+            height: 115px !important;
+         }
+         .collapse-height-10 {
+            height: 5px !important;
+         }
+         .collapse-height-mob {
+            height: 40px !important;
+         }
+
+         .collapse-height-4-cols-bottom {
+            height: 16px !important;
+         }
+
+         }
+         /*IPHONE STYLES*/
+         @media only screen and (max-width: 480px) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #ffffff; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #ffffff !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+         table[class=devicewidth] {width: 280px!important;text-align:center!important;}
+         table[class=devicewidthinner] {
+            width: 260px!important;
+            text-align:center!important;
+            margin-left: 10px;
+            float: left;  
+         }
+         img[class=banner] {width: 280px!important;height:140px!important;}
+         img[class=colimg2] {width: 280px!important;height:140px!important;}
+         td[class="padding-top15"]{padding-top:15px!important;}
+         
+         .destination-name {
+           padding-left: 0;
+         }
+         .destination-price{
+            padding-right: 0;
+         }
+         .destination-price img{
+            width: 105px !important;
+            margin-left: 20px;
+         }
+
+         .full-width-banner-image,
+         .full-width-banner-image-inner {
+           width: 100px!important;
+           text-align: center!important;
+           margin-left: 10px !important;
+           float: left;
+         }
+
+         .full-width-destination-wrapper,
+         .full-width-destination-container {
+           width: 128px!important;
+           text-align: center!important;
+           margin-left: 10px !important;
+           float: left;
+         }
+
+         .full-width-banner-image-inner img{
+            margin-top: 128px;
+            vertical-align: bottom;
+         }
+
+         .full-width-banner-image-inner{
+           margin-left: 10px !important;
+         }
+
+         .hero-title{
+            font-size:35px; 
+            position:relative; 
+            z-index:10; 
+            border-bottom:1px 
+            dotted #ffffff; 
+            text-align:center; 
+            color:#ffffff; 
+            font-family:arial; 
+            padding-top:45px; 
+            text-transform:uppercase; 
+            width:90%;
+         }
+         .hero-booknow table{
+            width: 150px;
+            height: 40px;
+         }
+         .hero-spacer{
+            height: 15px;
+         }
+         .hero-booknow table a{
+            font-size: 20px;
+         }
+
+         .col-2-horizontal{
+            width: 280px!important;
+         }
+         .col-2-horizontal-right{
+            text-align: left !important;
+         }
+         .col-2-horizontal .img-area{
+            width: 85px;
+            float: left;
+         }
+         .col-2-horizontal .description-area{
+            width: 170px;
+            float: left;
+            margin-left: 15px;
+         }
+        .col-2-horizontal .icon-description-area{
+            width: 190px;
+         }
+        .col-2-img-horizontal{
+            width:70px;
+         }
+        .col-4-page .block-wrapper{
+            width:140px !important;
+         }
+        .col-4-page .block-wrapper .devicewidthinner{
+            width:130px !important;
+            margin:0 5px !important;
+         }
+        .col-4-page .col3banner{
+            height:74px;
+         }
+
+         .hero-txt {
+            font-size: 40px !important;
+            line-height: 40px !important;
+         }
+
+         .dotted-line {
+            width: 260px !important;
+         }
+
+         .four-col-item {
+            width: 130px !important;            
+         }
+
+         .four-col-item-1 {
+                      
+         }
+
+         .four-col-item-2 {
+            float: right !important;      
+         }
+
+         .four-col-item-3 {
+            float: left !important;      
+         }
+
+         .four-col-item-4 {
+                  
+         }
+
+         .four-col-item .four-col-item-img {
+            width: 130px !important;
+            height: 74px !important;
+         }
+         
+         }
+      </style>
+   </head>
+   <body>
+      <table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" id="backgroundTable" class="mob-hide" >
+         <tbody>
+            <tr>
+               <td>
+                  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center">
+                     <tbody>
+                        <tr>
+                           <td cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff; line-height:1px; height:1px; min-width: 600px;">
+                              <img src="<%= baseUrl %>spacer-1.gif" height="1"  width="600" style="max-height:1px; min-height:1px; display:block; width:600px; min-width:600px;" />
+                           </td>      
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>

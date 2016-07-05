@@ -1,0 +1,58 @@
+<style type="text/css">
+   /*IPAD STYLES*/
+   @media only screen and (max-width: 640px) {
+      a[id=switcher] {
+         display:block;
+         background-image: url(<%= baseUrl %>full-width-banner-medium.jpg) !important;
+         background-repeat: no-repeat !important;
+         background-position: center !important;
+         width: 440px !important;
+         height: 196px !important;
+      }
+      img[id=full-width-banner] {display: none !important;}
+   }
+
+   /*IPHONE STYLES*/
+   @media only screen and (max-width: 480px) {
+      a[id=switcher] {
+         display:block;
+         background-image: url(<%= baseUrl %>full-width-banner-small.jpg) !important;
+         background-repeat: no-repeat !important;
+         background-position: center !important;
+         width: 280px !important;
+         height: 220px !important;
+      }
+      img[id=full-width-banner] {display: none !important;}
+   }
+</style>
+
+<table width="100%" bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" class="mob-generic-top-bottom-margin">
+   <tbody>
+      <tr>
+         <td>
+
+         
+            <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="devicewidth">
+               <tbody>
+                  <!-- Spacing -->
+                  <tr>
+                     <td width="100%" height="40" class="collapse-height-10"></td>
+                  </tr>
+                  <!-- Spacing -->
+
+                  <tr>
+                     <td width="600" valign="top" class="devicewidth">
+                        <a id="switcher" style="text-decoration: none;text-align:center; font-family:arial;border:none; outline:none;" href="#">
+                           <img class="devicewidth" id="full-width-banner" src="<%= baseUrl %>full-width-banner-big.jpg" alt="" border="0" width="600" height="150" style="border:none; outline:none; text-decoration:none;">
+
+                           
+
+                        </a>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>   
+         </td>
+      </tr>
+   </tbody>
+</table>
