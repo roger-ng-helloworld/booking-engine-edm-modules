@@ -11,6 +11,7 @@ var cols2 = require('./routes/cols-2');
 var cols3 = require('./routes/cols-3');
 var cols4 = require('./routes/cols-4');
 var bookingEngineEdmConfirmation = require('./routes/booking-engine-edm-confirmation');
+var bookingEngineEdmTicketConfirmation = require('./routes/booking-engine-edm-ticket-confirmation');
 var bookingEngineEdmCancellation = require('./routes/booking-engine-edm-cancellation');
 
 var app = express();
@@ -33,6 +34,7 @@ app.use('/cols-2', cols2);
 app.use('/cols-3', cols3);
 app.use('/cols-4', cols4);
 app.use('/booking-engine-edm-confirmation', bookingEngineEdmConfirmation);
+app.use('/booking-engine-edm-ticket-confirmation', bookingEngineEdmTicketConfirmation);
 app.use('/booking-engine-edm-cancellation', bookingEngineEdmCancellation);
 
 // catch 404 and forward to error handler
